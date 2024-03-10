@@ -35,3 +35,11 @@ In some cases this will not affect the intelligibility of characters that are ac
 Speakers of non-Western languages or applications that require less common symbols are much more likely to be impacted when Windows attempts to display UTF-8 encoded characters using a legacy codepage. (The author of this README has idly wondered if native English speakers would be aware of the issue if it hadn't impacted their ability to use emoji.)  
 
 Recent builds of Windows offer experimental support for setting UTF-8 as the "fallback" locale, which would prevent the issue from occuring.  See the links provided above -- and the immediately preceding warning -- for several methods to enable the feature.
+
+##### Originally tested on/with:<p>
+* Microsoft Windows 11 Pro (Windows Version	10.0.22624 Build 22624)
+* Windows Terminal Preview Version: 1.17.1023
+
+##### References:<p>
+* https://superuser.com/q/1715715
+* https://learn.microsoft.com/en-us/answers/questions/587680/where-can-i-find-beta-use-unicode-utf-8-for-worldw
