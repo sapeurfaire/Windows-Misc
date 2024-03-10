@@ -8,7 +8,7 @@ The instructions and code provided here prevent Windows from "falling back" to t
 
 ### Solution Options
 
-Each of the following links provides a different means of accomplishing the same end.  You only need to use one of them.  All of them require a reboot.
+Each of the following links provides a different means of accomplishing the same end.  You only need to use one of them.  All of them require a reboot. 
 
 [Configure Windows 10/11 to "fall back" to UTF-8 in the Windows UI ("manually")](https://github.com/sapeurfaire/Windows-Misc/blob/main/Terminal/systemwide-utf8-fallback.md)<br>
 [Configure Windows 10/11 to "fall back" to UTF-8 by running a PowerShell script](https://github.com/sapeurfaire/Windows-Misc/blob/main/Terminal/systemwide-utf8-fallback.ps1)<br>
