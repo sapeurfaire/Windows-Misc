@@ -8,7 +8,7 @@
 
 ## Note that the program *does not* however try to circumvent restrictions on 
 ## execution of unsigned code from a remote origin. (Asking you to trust this code is one thing. 
-## Asking you trun run *any* code is quite another).  To unblock this script, see:
+## Asking you trust *any* code is quite another).  To unblock this script, see:
 ## https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.4#example-7-unblock-a-script-to-run-it-without-changing-the-execution-policy
 
 param([switch]$Elevated)
