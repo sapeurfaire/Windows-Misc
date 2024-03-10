@@ -34,4 +34,4 @@ In some cases this will not affect the intelligibility of characters that are ac
 
 Speakers of non-Western languages or applications that require less common symbols are much more likely to be impacted when Windows attempts to display UTF-8 encoded characters using a legacy codepage. (The author of this README has idly wondered if native English speakers would be aware of the issue if it hadn't impacted their ability to use emoji.)  
 
-Recent builds of Windows offer experimental support for setting UTF-8 as the "fallback" locale, which would prevent the issue from occuring.  The remainder of this note details how to do this.  Please do re-read and heed the warning above before following any of the procedures on offer.  Using any of them could impact the ability for legacy applications to display data correctly, or worse, cause them to actively damage the data you entrust to them.
+Recent builds of Windows offer experimental support for setting UTF-8 as the "fallback" locale, which would prevent the issue from occuring.  See the links provided above -- and the immediately preceding warning -- for several methods to enable the feature.
