@@ -1,10 +1,15 @@
 ## Force Windows to use UTF-8 rather than a legacy locale as UTF-16 fallback
 
+## Changes will not take affect until after reboot. The program makes no attempt
+## to notify user of this, let alone force it.
+
 ## Users shoud expect to see a UAC prompt allowing program to run as admin
 ## which is required to update the registry.  
 
-## Changes will not take affect until after reboot. The program makes no attempt
-## to notify user of this, let alone force it.
+## Note that the program *does not* however try to circumvent restrictions on 
+## execution of unsigned code from a remote origin. (Asking you to trust this code is one thing. 
+## Asking you trun run *any* code is quite another).  To unblock this script, see:
+## https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.4#example-7-unblock-a-script-to-run-it-without-changing-the-execution-policy
 
 param([switch]$Elevated)
 
