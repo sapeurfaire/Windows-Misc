@@ -4,13 +4,13 @@ You see strange and meaningless symobls in the Windows Terminal intead of the no
 
 #### CAVEAT EMPTOR (DATA CORRUPTION WARNING)
 
-The instructions and code provided here prevent Windows from "falling back" to the use of legacy codepages when it detects characters not stored as UTF-16. If you use an application or program that require a legacy codepage after using one of the hacks here, it is possible that the program could save corrupt data. 
+The instructions and code provided here prevent Windows from "falling back" to the use of legacy codepages when it detects characters not stored as UTF-16. If you use an application or program that require a legacy codepage after using one of the hacks here, it is possible that the program could cause data corruption.
 
 ### 
 
-[Configure Windows 10/11 to "fall back" to UTF-8 in the Windows UI ("manually")](https://github.com/sapeurfaire/Windows-Misc/blob/main/Terminal/systemwide-utf8-fallback.md)
-[Configure Windows 10/11 to "fall back" to UTF-8 by running a PowerShell script](https://github.com/sapeurfaire/Windows-Misc/blob/main/Terminal/systemwide-utf8-fallback.ps1)
-[Configure Windows 10/11 to "fall back" to UTF-8 by importing registry settings](https://github.com/sapeurfaire/Windows-Misc/blob/main/Terminal/systemwide-utf8-fallback.reg)
+[Configure Windows 10/11 to "fall back" to UTF-8 in the Windows UI ("manually")](https://github.com/sapeurfaire/Windows-Misc/blob/main/Terminal/systemwide-utf8-fallback.md)<br>
+[Configure Windows 10/11 to "fall back" to UTF-8 by running a PowerShell script](https://github.com/sapeurfaire/Windows-Misc/blob/main/Terminal/systemwide-utf8-fallback.ps1)<br>
+[Configure Windows 10/11 to "fall back" to UTF-8 by importing registry settings](https://github.com/sapeurfaire/Windows-Misc/blob/main/Terminal/systemwide-utf8-fallback.reg)<br>
 
 ### Details
 
