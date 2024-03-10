@@ -1,12 +1,14 @@
 ### TL;DR:
 
-You see strange and meaningless symobls in the Windows Terminal intead of the non-English characters or emoji you had likely exptected.  If this occurred beasue Windows was trying to show Unicode stored as UTF-8 rather than UTF-16, one of the methods provided here may correct the issue. You will need to reboot regardless of which method you choose.  
+You see strange and meaningless symobls in the Windows Terminal intead of the non-English characters or emoji you had likely exptected.  If this occurred beasue Windows was trying to show Unicode stored as UTF-8 rather than UTF-16, one of the methods provided here may correct the issue.
 
 #### CAVEAT EMPTOR (DATA CORRUPTION WARNING)
 
 The instructions and code provided here prevent Windows from "falling back" to the use of legacy codepages when it detects characters not stored as UTF-16. If you use an application or program that require a legacy codepage after using one of the hacks here, it is possible that the program could cause data corruption.
 
-### 
+### Solution Options
+
+Each of the following links provides a different means of accomplishing the same end.  You only need to use one of them.  All of them require a reboot.
 
 [Configure Windows 10/11 to "fall back" to UTF-8 in the Windows UI ("manually")](https://github.com/sapeurfaire/Windows-Misc/blob/main/Terminal/systemwide-utf8-fallback.md)<br>
 [Configure Windows 10/11 to "fall back" to UTF-8 by running a PowerShell script](https://github.com/sapeurfaire/Windows-Misc/blob/main/Terminal/systemwide-utf8-fallback.ps1)<br>
@@ -26,7 +28,7 @@ Which is strange from a historical perspective. Microsoft was an early adopter o
 
 Early in the history of Unicode, Microsoft chose to use [UTF-16](https://en.wikipedia.org/wiki/UTF-16) in it's then new [Windows NT](https://en.wikipedia.org/wiki/Windows_NT) operating system.  (Which you are using a descendant of, if the problem described in this note applies to your system).  While there are other exceptions -- Java, for example -- the majority of other systems used to store and process data would go on to use [UTF-8](https://en.wikipedia.org/wiki/UTF-8).  
 
-UTF-16 will contain a [BOM](https://en.wikipedia.org/wiki/Byte_order_mark) and may contain null-bytes. If a character contain neither of these, and Windows did not otherwise have an explicit indication of the correct encoding to use, it will assume the data should be displayed using a legacy 8-bit codepage or ["locale"](https://en.wikipedia.org/wiki/Locale_(computer_software)) The specific locale used would be based on the primary language chosen by the user that installed the system. 
+UTF-16 will contain a [BOM](https://en.wikipedia.org/wiki/Byte_order_mark) and may contain null-bytes. If a character contain neither of these, and Windows did not otherwise have an explicit indication of the correct encoding to use, it will assume the data should be displayed using a legacy 8-bit codepage or ["locale"](https://en.wikipedia.org/wiki/Locale_(computer_software)). The specific locale used would be based on the primary language chosen by the user that installed the system. 
 
 In some cases this will not affect the intelligibility of characters that are actually UTF-8 encoded. English and numerous other Western European languages use a [(common subset)](https://en.wikipedia.org/wiki/ASCII) of characters that are encoded in exactly the same form in UTF-8 as well as the legacy codepages those languages had previously relied on.  
 
